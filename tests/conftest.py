@@ -1,7 +1,7 @@
 import sys
 import pytest
 
-from project_name.app import create_app
+from project_name import create_app
 from project_name.ext.commands import populate_db
 from project_name.ext.database import db
 

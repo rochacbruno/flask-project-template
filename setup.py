@@ -42,5 +42,8 @@ setup(
     entry_points={
         "console_scripts": ["project_name = project_name.__main__:main"]
     },
-    extras_require={"test": read_requirements("requirements-test.txt")},
+    extras_require={
+        "test": read_requirements("requirements-test.txt")
+        + read_requirements("requirements-base.txt")
+    },
 )

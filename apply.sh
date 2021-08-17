@@ -52,6 +52,7 @@ cp -R ${TEMPLATE_DIR}/project_name "${name}"
 cp -R ${TEMPLATE_DIR}/tests tests
 
 cp ${TEMPLATE_DIR}/README.md README.md
+cp ${TEMPLATE_DIR}/Containerfile Containerfile
 cp ${TEMPLATE_DIR}/wsgi.py wsgi.py
 cp ${TEMPLATE_DIR}/.env .env
 cp ${TEMPLATE_DIR}/settings.toml settings.toml
