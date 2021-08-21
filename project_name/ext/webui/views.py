@@ -1,4 +1,6 @@
 from flask import abort, render_template
+from flask_simplelogin import login_required
+
 from project_name.models import Product
 
 
@@ -12,3 +14,8 @@ def product(product_id):
         404, "produto nao encontrado"
     )
     return render_template("product.html", product=product)
+
+
+@login_required
+def secret():
+    return "This can be seen only if user is logged in"

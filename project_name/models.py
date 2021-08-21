@@ -1,5 +1,6 @@
-from project_name.ext.database import db
 from sqlalchemy_serializer import SerializerMixin
+
+from project_name.ext.database import db
 
 
 class Product(db.Model, SerializerMixin):
