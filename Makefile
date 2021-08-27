@@ -113,7 +113,7 @@ switch-to-poetry: ## Switch to poetry package manager.
 	@echo "Please run 'poetry shell' or 'poetry run project_name'"
 	
 	
-# This project has been generated from rochacbruno/python-project-template
+# This project has been generated from rochacbruno/flask-project-template
 # __author__ = 'rochacbruno'
 # __repo__ = https://github.com/rochacbruno/flask-project-template
 # __sponsor__ = https://github.com/sponsors/rochacbruno/
