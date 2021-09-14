@@ -2,7 +2,9 @@
 
 A full feature Flask project template.
 
-See also [Python-Project-Template](https://github.com/rochacbruno/python-project-template/) for a lean, low dependency Python app.
+See also 
+- [Python-Project-Template](https://github.com/rochacbruno/python-project-template/) for a lean, low dependency Python app.
+- [FastAPI-Project-Template](https://github.com/rochacbruno/fastapi-project-template/) The base to start an openapi project featuring: SQLModel, Typer, FastAPI, JWT Token Auth, Interactive Shell, Management Commands.
 
 ### HOW TO USE THIS TEMPLATE
 
