@@ -16,7 +16,7 @@ def test_products_get_all(client, products):  # Arrange
 
 
 def test_products_get_one(client, products):  # Arrange
-    """Test get all products"""
+    """Test get one product"""
     for product in products:
         # Act
         response = client.get(f"/api/v1/product/{product.id}")
