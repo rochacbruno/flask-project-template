@@ -41,6 +41,9 @@ DEBUG_TB_PANELS = [
 ]
 
 [testing]
+EXTENSIONS = [
+    "dynaconf_merge_unique"  # to reuse extensions list from [default]
+]
 SQLALCHEMY_DATABASE_URI = 'sqlite:///testing.db'
 
 [production]
