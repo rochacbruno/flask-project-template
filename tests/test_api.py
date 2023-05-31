@@ -1,6 +1,10 @@
 from decimal import Decimal
 
 
+def test_dynaconf_is_on_testing_env(app):
+    assert app.config.current_env == "testing"
+
+
 def test_products_get_all(client, products):  # Arrange
     """Test get all products"""
     # Act
