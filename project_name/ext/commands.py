@@ -1,20 +1,27 @@
 import click
 
+from flask.cli import with_appcontext
 from project_name.ext.auth import create_user
 from project_name.ext.database import db
 from project_name.models import Product
 
 
+@click.command("create_db")
+@with_appcontext
 def create_db():
     """Creates database"""
     db.create_all()
 
 
+@click.command("drop_db")
+@with_appcontext
 def drop_db():
     """Cleans database"""
     db.drop_all()
 
 
+@click.command("populate_db")
+@with_appcontext
 def populate_db():
     """Populate db with sample data"""
     data = [
@@ -32,7 +39,7 @@ def populate_db():
 def init_app(app):
     # add multiple commands in a bulk
     for command in [create_db, drop_db, populate_db]:
-        app.cli.add_command(app.cli.command()(command))
+        app.cli.add_command(command)
 
     # add a single command
     @app.cli.command()
